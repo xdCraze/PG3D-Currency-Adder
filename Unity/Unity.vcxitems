@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{302c53e2-550a-4034-b9bc-5c86978733dd}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)backend\api-function.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)backend\vm-functions.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)exceptions\ExceptionBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Main.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)service\ClassMapping.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)service\CommonCShrap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)service\Dumper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)structures\Class.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)structures\Domain.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)structures\FieldInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)structures\Image.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)structures\MethodInfo.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)structures\misc\PatternStructs.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)structures\Object.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)structures\String.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)structures\Type.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)backend\api-function.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)backend\api-import-list.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)backend\tabledefs.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)backend\types.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)backend\vm-functions.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)exceptions\ExceptionBase.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)exceptions\IndexOutOfBound.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)exceptions\NoSuchClass.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)exceptions\NoSuchImage.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)exceptions\NoSuchMember.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)exceptions\NullArgument.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)exceptions\PatternScanFailed.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)exceptions\UnexpectedError.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)exceptions\UnresolvedMappingQueue.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)IL2CPP.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Main.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)misc\CommonGameStructs.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)service\ClassMapping.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)service\CommonCShrap.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)service\Dumper.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\Class.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\Domain.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\FieldInfo.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\generic\Array.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\generic\List.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\Image.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\MethodInfo.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\misc\PatternStructs.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\Object.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\String.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\Type.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)structures\Typedefs.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)wrapper\MethodWrapper.hpp" />
+  </ItemGroup>
+</Project>
