@@ -26,4 +26,6 @@
 ## Misc
 For further help, join my Discord: https://discord.gg/XSG3KGUstz
 
+If you need an injector you can use this one: https://github.com/DariSVR/PG3D-Simple-Injector
+
 Please **star** if you can!
